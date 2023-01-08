@@ -1,0 +1,28 @@
+<div class="title">
+  <h1>
+    Pokémon Unite - Pokédex
+  </h1>
+  <p>
+    Confira a lista completa de Pokémons do jogo Pokemón Unite e suas habilidades, evoluções e muito mais!
+  </p>
+</div>
+
+<div class="filter">
+  <form [formGroup]="filter" (ngSubmit)="onFilterSubmit()">
+    <input type="text" formControlName="name">
+    <button type="submit">Pesquisar</button>
+  </form>
+</div>
+
+<div class="list" *ngIf="pokemons?.length else notFound">
+  <a *ngFor="let pokemon of pokemons; let i = index;" routerLink="details/{{ pokemon.uri }}">
+    <figure style="background-color: {{ pokemon.color }};">
+      <img src="assets/avatar/stat-{{pokemon.avatar}}.png" />
+      <figcaption>{{pokemon.name}}</figcaption>
+    </figure>
+  </a>
+</div>
+
+<ng-template #notFound>
+  <p>Nenhum pokemon encontrado</p>
+</ng-template>

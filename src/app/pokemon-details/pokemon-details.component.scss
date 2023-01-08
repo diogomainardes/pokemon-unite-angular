@@ -1,0 +1,149 @@
+.profile {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 450px;
+  border-bottom: rgba(255,255,255,.3) solid 1px;
+  padding: 10px 0 30px;
+
+  .avatar-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 450px;
+    img {
+      height: 450px;
+    }
+  }
+
+  .profile-details {
+    background: linear-gradient(90deg, rgba(17, 17, 17, 0) 30%, rgba(115, 115, 115, 0.1) 70%);
+    margin-left: 450px;
+    text-align: right;
+    padding: 20px;
+    color: #FFF;
+    p {
+      margin:10px 0;
+      font-size: 16px;
+    }
+    .name {
+      margin-top: 0;;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .stats_battle {
+      display: flex;
+      flex-direction:row-reverse;
+      margin-top: 25px;
+      li {
+        border: solid 1px #FFA800;
+        border-radius: 50px;
+        color: orange;
+        padding: 8px 16px;
+        margin-left: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.skills {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      color: #FFA800;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #FFF;
+      margin: 10px 0;
+    }
+  }
+  .skills-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    .skills-item {
+      display: flex;
+      align-items: center;
+      background-color: rgba(255,255,255,.1);
+      flex-grow: 1;
+      margin-top: 10px;
+      border-radius: 15px;
+      padding: 10px 20px;
+      p {
+        color: #FFF;
+        width: 50%;
+      }
+      meter {
+        width: 100%;
+        &::-webkit-meter-optimum-value {
+          background: orange;
+          -webkit-transition: width .5s;
+        }
+
+        &::-webkit-meter-bar {
+          background:#111;
+          height: 10px;
+        }
+      }
+    }
+
+  }
+}
+
+.evolutions {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      color: #FFA800;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #FFF;
+      margin: 10px 0;
+    }
+  }
+  .evolutions-list {
+    display: flex;
+    justify-content: center;
+    figure {
+      width: 300px;
+      text-align: center;
+      img {
+        width: 200px;
+      }
+      figcaption {
+        text-align: center;
+        color: #FFF;
+        background-color: rgba(255,255,255,.1);
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 10px 0;
+        span {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}

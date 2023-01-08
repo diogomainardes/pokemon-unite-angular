@@ -1,0 +1,44 @@
+
+<div class="profile">
+  <div class="avatar-container" [ngStyle]="{ 'background': 'radial-gradient(circle, '+ details.color +'55 0%, #11111111 50%)' }">
+    <img src="assets/avatar/stat-{{ details.avatar }}.png" />
+  </div>
+
+  <div class="profile-details">
+    <p class="name" [ngStyle]="{'color': details.color}">{{ details.name }}</p>
+    <p class="level">NÍVEL: {{ details.level }}</p>
+    <p class="description">{{ details.description }}</p>
+    <ul class="stats_battle">
+      <li *ngFor="let stats of details.stats_battle">{{ stats }}</li>
+    </ul>
+  </div>
+</div>
+
+<div class="skills">
+  <div class="skills-container">
+    <div class="title">
+      <h2>Skills do Pokémon</h2>
+      <p>Esse Pokémon possui as seguintes habilidades de batalha:</p>
+    </div>
+    <div class="skills-item" *ngFor="let skill of details.skills">
+      <p>{{ labelSkills[skill.key.toString()] }}</p>
+      <meter max="100" min="0" value="{{ skill.value }}"></meter>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="details.evolutions.length" class="evolutions">
+  <div class="title">
+    <h2>Evoluções</h2>
+    <p>Esse Pokémon pode evoluir em:</p>
+  </div>
+  <div class="evolutions-list">
+    <figure *ngFor="let evolution of details.evolutions">
+      <img src="assets/evolutions/{{ evolution.avatar }}" />
+      <figcaption>
+        {{ evolution.name }}
+        <span>Nível: {{ evolution.level }}</span>
+      </figcaption>
+    </figure>
+  </div>
+</div>

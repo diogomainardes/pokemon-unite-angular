@@ -1,0 +1,57 @@
+.title {
+  h1, p {
+    color: white;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.filter {
+
+  input[type="text"] {
+    border: solid 1px orange;
+    background-color: #111;
+    padding: 10px 10px 10px 50px;
+    box-sizing: border-box;
+    width: calc(100% - 130px);
+    color: white;
+    position: relative;
+    &:focus{
+      outline: none;
+    }
+  }
+  button {
+    background: orange;
+    color: #111;
+    margin-left: 10px;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  margin-top: 25px;
+  figure {
+    margin: 0;
+    overflow: hidden;
+    min-width: 0px;
+    text-align: center;
+    border-radius: 10px;
+    img {
+      width: 150px;
+      min-width: 0px;
+    }
+    figcaption {
+      background-color: #232323;
+      padding: 5px 0;
+    }
+  }
+}

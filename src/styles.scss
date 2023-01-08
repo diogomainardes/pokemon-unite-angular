@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
