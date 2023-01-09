@@ -37,14 +37,10 @@ Este desafio foi elaborado e criado pelas desenvolvedoras Michele Ambrosio e Day
   
 </table>
 
-## Screeshots
+## Screenshots
 
+<img src="screenshots/screen-01.png" />
+<img src="screenshots/screen-02.png" />
+<img src="screenshots/screen-03.png" />
 
-<table border=0 width="500">  
-  <tr>
-    <td>
-      <img>
-    </td>
-  </tr>
-</table>
 
