@@ -1,27 +1,29 @@
 # PokemonUnite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+Projeto criado para fins de estudos do AngularJS. 
 
-## Development server
+## Para executar
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Baixe o repositório para a sua máquina
+- Instale o Angular CLI: `npm install --global @angularjs/cli`
+- Na pasta do repositório, execute o comando `ng serve`
 
-## Code scaffolding
+## Sobre o desafio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este desafio foi elaborado e criado pelas desenvolvedoras Michele Ambrosio e Dayane Moraes. Sigam nas redes sociais.
 
-## Build
+<table border=0 width="500">
+  <tr>
+      <td><img src="https://media.licdn.com/dms/image/D5603AQEp_1rAKNOFnQ/profile-displayphoto-shrink_800_800/0/1665504753032?e=1678924800&v=beta&t=J05VOySjzp2JQ7g6099rC-sDBGzaoFZo4RShbU4oHZw" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/></td>
+      <td>Michele Ambrosio<br>Front-End Developer<br><a href="https://www.linkedin.com/in/michelequeirozambrosio/">LinkedIn</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://media.licdn.com/dms/image/C4D03AQFD8CvQ4hFvnA/profile-displayphoto-shrink_800_800/0/1662059934522?e=1678924800&v=beta&t=vtJAQT051kDVmOZDAMm4yJ0a16alrCN5sDBFx4YlLAE" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/></td>
+    <td>Dayane Moraes<br />Software Developer<br><a href="https://www.linkedin.com/in/dayane-moraes/">LinkedIn</a></td>
+   </tr> 
+  
+</table>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
