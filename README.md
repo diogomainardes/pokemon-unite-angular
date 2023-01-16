@@ -9,7 +9,8 @@ Projeto criado para fins de estudos do AngularJS.
 ## Para executar
 
 - Baixe o repositório para a sua máquina
-- Instale o Angular CLI: `npm install --global @angularjs/cli`
+- Instale o Angular CLI: `npm install --global @angular/cli`
+- Instale as dependencias do projeto utilizando o comando `npm install`
 - Na pasta do repositório, execute o comando `ng serve -o`
 
 ## Sobre o desafio
